@@ -24,7 +24,7 @@ pytest --cov-report xml --cov-report term --cov ./lib/'''
     }
     stage('deployment') {
       when {
-        branch master
+        branch 'master'
       }
       steps {
         input 'is everything ok '
